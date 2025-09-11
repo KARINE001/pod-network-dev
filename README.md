@@ -28,7 +28,7 @@ Deploy contracts for **99% less** than Ethereum mainnet costs.
 
 ### ✅ **Real Development Experience**
 - Complete tutorial for Pod Network V1 Devnet deployment
-- **7 contracts successfully deployed** with proof and addresses
+- **4 contracts successfully deployed** with proof and addresses
 - Step-by-step troubleshooting from actual issues encountered
 - Performance observations from real testing
 
