@@ -1,0 +1,25 @@
+# Environment files
+.env
+.env.local
+*.key
+
+# Foundry artifacts
+out/
+cache/
+broadcast/
+
+# Node modules
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+deployed-contracts.txt
