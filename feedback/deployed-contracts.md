@@ -39,4 +39,4 @@ cast call 0x6eb77940fD64d791eb3B443b49a0073ad4cF22E0 "balanceOf(address)" 0x1953
 
 All contracts successfully deployed with **200ms finality** confirmed on Pod Network V1 Devnet.
 
-**Screenshot**: See `proof/screenshots/` for deployment confirmations.
+

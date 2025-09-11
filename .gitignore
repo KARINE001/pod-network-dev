@@ -23,3 +23,8 @@ Thumbs.db
 # Logs
 *.log
 deployed-contracts.txt
+
+# Temporary - exclude while in development
+scripts/
+contracts/
+
