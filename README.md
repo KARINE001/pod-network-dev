@@ -4,59 +4,77 @@
 [![Foundry](https://img.shields.io/badge/Built_with-Foundry-green.svg)](https://getfoundry.sh/)
 [![Status](https://img.shields.io/badge/Status-Tested_✓-brightgreen.svg)]()
 
-Complete developer guide and real feedback for deploying smart contracts on Pod Network V1 Devnet - the blockchain with fast transaction finality.
-🌐 What is Pod Network?
-Pod Network is a Layer 1 blockchain that fundamentally reimagines how blockchains work:
-🚫 No Traditional Blocks
-Unlike Ethereum's sequential blocks, Pod Network uses streaming consensus where transactions flow directly to validators without global ordering requirements.
-⚡ Fast Finality
-Transactions typically confirm in under 1 second vs 30+ seconds on Ethereum - significantly faster!
-🔄 Coordination-Free Architecture
-Applications can run in parallel without waiting for global state coordination, enabling improved scalability.
-💰 Cost Effective
-Deploy contracts for 99% less than Ethereum mainnet costs.
+Complete developer guide and real feedback for deploying smart contracts on **Pod Network V1 Devnet** - the blockchain with **fast transaction finality**.
 
-🎯 What This Repository Provides
-✅ Real Development Experience
+## 🌐 What is Pod Network?
 
-Complete tutorial for Pod Network V1 Devnet deployment
-4 contracts successfully deployed with proof and addresses
-Step-by-step troubleshooting from actual issues encountered
-Performance observations from real testing
+Pod Network is a **Layer 1 blockchain** that fundamentally reimagines how blockchains work:
 
-📚 Complete Learning Resources
+### 🚫 **No Traditional Blocks**
+Unlike Ethereum's sequential blocks, Pod Network uses **streaming consensus** where transactions flow directly to validators without global ordering requirements.
 
-Manual Installation Guide - Complete 45-minute tutorial
-Troubleshooting Guide - Solutions to actual problems
+### ⚡ **Fast Finality** 
+Transactions typically confirm in **under 1 second** vs 30+ seconds on Ethereum - that's **much faster**!
 
-🛠️ Working Solutions
+### 🔄 **Coordination-Free Architecture**
+Applications can run in parallel without waiting for global state coordination, enabling unprecedented scalability.
 
-Fixed import paths for Pod SDK examples
-Proper Foundry configuration for Pod Network
-Environment setup that actually works
-Constructor parameters for all contracts
+### 💰 **Cost Effective**
+Deploy contracts for **99% less** than Ethereum mainnet costs.
 
+---
 
-📖 Manual Installation (45 minutes)
-For developers who want to understand every step:
-➡️ Complete Manual Tutorial
+## 🎯 What This Repository Provides
+
+### ✅ **Real Development Experience**
+- Complete tutorial for Pod Network V1 Devnet deployment
+- **4 contracts successfully deployed** with proof and addresses
+- Step-by-step troubleshooting from actual issues encountered
+- Performance observations from real testing
+
+### 📚 **Complete Learning Resources**
+- **[Manual Installation Guide](pod-devnet-tutorial/manual-installation.md)** - Complete 45-minute tutorial
+- **[Troubleshooting Guide](feedback/troubleshooting-solutions.md)** - Solutions to actual problems
+
+### 🛠️ **Working Solutions**
+- Fixed import paths for Pod SDK examples
+- Proper Foundry configuration for Pod Network
+- Environment setup that actually works
+- Constructor parameters for all contracts
+
+---
+
+### 📖 **Manual Installation (45 minutes)**
+**For developers who want to understand every step:**
+
+➡️ **[Complete Manual Tutorial](pod-devnet-tutorial/manual-installation.md)**
+
 Learn the full process from installing Foundry to deploying contracts, with explanations of each step and solutions to common issues.
-⚡ Quick Scripts (15 minutes)
-For rapid deployment with automated scripts:
-🔄 Coming soon - automated deployment scripts
 
-📊 Real Deployment Results
-Successfully deployed on Pod Network V1 Devnet:
-ContractAddressStatusExplorerVoting0xb75B65...24dB0c9✅ LiveViewNFTs0xFC0208...6D46910✅ LiveViewAuction0xfE4Ae4...b22284B✅ LiveViewTokens0x6eb779...4cF22E0✅ LiveView
-Performance confirmed:
+---
 
-⚡ Fast finality - transactions typically confirm under 1 second
-💰 Total cost: ~$0.16 (vs $50-200+ on Ethereum)
-🌐 Network stability: Zero downtime during testing
-🔧 Success rate: 100% with proper configuration
+## 📊 Real Deployment Results
 
+**Successfully deployed on Pod Network V1 Devnet:**
 
-🎯 Repository Structure
+| Contract | Address | Status | Explorer |
+|----------|---------|--------|----------|
+| **Voting** | `0xb75B65...24dB0c9` | ✅ Live | [View](https://explorer.v1.pod.network/address/0xb75B65C0e733ccBb0Ef8F16056890866f24dB0c9) |
+| **NFTs** | `0xFC0208...6D46910` | ✅ Live | [View](https://explorer.v1.pod.network/address/0xFC020892353fabfDf89319A5fAAa6e45E6D46910) |
+| **Auction** | `0xfE4Ae4...b22284B` | ✅ Live | [View](https://explorer.v1.pod.network/address/0xfE4Ae4B2aAa8B686916F203AAB9939c40b22284B) |
+| **Tokens** | `0x6eb779...4cF22E0` | ✅ Live | [View](https://explorer.v1.pod.network/address/0x6eb77940fD64d791eb3B443b49a0073ad4cF22E0) |
+
+**Performance confirmed:**
+- ⚡ **Fast finality** typically under 1 second
+- 💰 **Total cost**: ~$0.16 (vs $50-200+ on Ethereum)
+- 🌐 **Network stability**: Zero downtime during testing
+- 🔧 **Success rate**: 100% with proper configuration
+
+---
+
+## 🎯 Repository Structure
+
+```
 pod-network-dev/
 ├── README.md                           # This introduction & overview
 ├── pod-devnet-tutorial/
@@ -66,106 +84,119 @@ pod-network-dev/
 │   └── troubleshooting-solutions.md    # Solutions to actual problems
 ├── .env.example                        # Environment template
 └── [scripts & contracts coming soon]   # Automated deployment tools
+```
 
-💡 Key Insights from Real Development
-🎯 What Works Great
+---
 
-Improved speed: Much faster finality compared to other blockchains
-EVM compatibility: Foundry works well once configured
-Cost effectiveness: 99% cheaper than Ethereum
-Network stability: Reliable during testing period
+## 💡 Key Insights from Real Development
 
-⚠️ Challenges Encountered
+### 🎯 **What Works Great**
+- **Fast transaction speed**: Noticeable improvement over other chains
+- **EVM compatibility**: Foundry works perfectly once configured
+- **Cost effectiveness**: 99% cheaper than Ethereum
+- **Network stability**: Reliable during testing period
 
-Import path fixes: SDK examples need manual corrections
-Foundry configuration: Custom setup required for Pod Network
-Environment setup: Specific RPC URLs and chain configuration
-Some SDK primitives: Required testing to find working patterns
+### ⚠️ **Challenges Solved**
+- **Import path fixes**: SDK examples need manual corrections
+- **Constructor parameters**: Undocumented but figured out through testing
+- **Foundry configuration**: Custom setup required for Pod Network
+- **Environment setup**: Specific RPC URLs and chain configuration
 
-🔧 Solutions Provided
+### 🔧 **Solutions Provided**
+- Working `foundry.toml` configuration
+- Fixed contract imports for compilation
+- Step-by-step troubleshooting guide
+- Real deployment addresses for verification
 
-Working foundry.toml configuration
-Fixed contract imports for compilation
-Step-by-step troubleshooting guide
-Real deployment addresses for verification
+---
 
+## 🚀 Applications Enabled by Fast Finality
 
-🚀 Applications Enabled by Fast Finality
-Pod Network's improved speed enables applications with better user experience:
-🎮 Responsive Applications
+Pod Network's speed enables applications **improved over other blockchains**:
 
-Improved on-chain interactions with faster confirmation
-Better auction experiences with quicker bidding
-Enhanced trading opportunities
+### 🎮 **Responsive Applications**
+- **On-chain gaming** with faster interactions
+- **Live auctions** with responsive bidding
+- **Real-time trading** opportunities
 
-💰 Financial Innovation
+### 💰 **Financial Benefits**
+- **Viable micropayments** due to low costs
+- **Responsive DeFi** with faster confirmations
+- **Cost-effective development** environment
 
-More viable micropayments with lower costs
-Responsive DeFi with faster confirmation times
-Improved on-chain operations
+### 🤝 **Social & Governance**
+- **Faster voting** with quicker results
+- **Responsive interfaces** for blockchain apps
+- **Real-time interactions** in decentralized systems
 
-🤝 Social & Governance
+---
 
-Faster voting with quicker results
-More responsive applications
-Better governance participation
+## ⚠️ Development Notes
 
+**Based on testing experience**, some considerations for developers:
 
-⚠️ Developer Notes
-Based on testing experience with Pod Network V1 Devnet:
+- **SDK examples may need import path adjustments** for compilation
+- **Some Pod Network primitives had inconsistent behavior** during testing
+- **Standard Solidity patterns worked reliably** as fallbacks
+- **Always test thoroughly** with your specific use case
 
-Most contracts deploy and work as expected
-Some Pod SDK primitives may require testing to ensure compatibility
-Standard Solidity patterns work reliably
-Always test thoroughly with your specific use case
+*This reflects real development experience - your results may vary*
 
+---
 
-🌐 Pod Network Information
-Pod Network V1 Devnet:
+## 🌐 Pod Network Information
 
-RPC: https://rpc.v1.dev.pod.network
-Chain ID: 1293
-Explorer: https://explorer.v1.pod.network
-Faucet: 0.1 POD ETH/day via Twitter verification
+**Pod Network V1 Devnet:**
+- **RPC**: `https://rpc.v1.dev.pod.network`
+- **Chain ID**: `1293`
+- **Explorer**: https://explorer.v1.pod.network
+- **Faucet**: 0.1 POD ETH/day via Twitter verification
 
-Key Features:
+**Key Features:**
+- **No blocks**: Streaming consensus architecture
+- **EVM Prague**: Latest Ethereum compatibility
+- **Coordination-free**: Parallel transaction processing
+- **Fast finality**: Transactions confirm quickly
 
-No blocks: Streaming consensus architecture
-EVM Prague: Latest Ethereum compatibility
-Coordination-free: Parallel transaction processing
-Fast finality: Quick transaction confirmation
+---
 
+## 🤝 Contributing
 
-🤝 Contributing
 This repository documents real developer experience with Pod Network V1 Devnet. Contributions welcome:
 
-Test the deployment process and share your results
-Report issues or improvements needed
-Share your deployment addresses and screenshots
-Suggest documentation enhancements
+1. **Test the deployment process** and share your results
+2. **Report issues** or improvements needed
+3. **Share your deployment addresses** and screenshots
+4. **Suggest documentation** enhancements
 
+---
 
-🆘 Support & Resources
-📚 Learning Resources
+## 🆘 Support & Resources
 
-Official Documentation: https://docs.v1.pod.network
-Pod Network Website: https://pod.network
-GitHub SDK: https://github.com/podnetwork/pod-sdk
+### 📚 **Learning Resources**
+- **Official Documentation**: https://docs.v1.pod.network
+- **Pod Network Website**: https://pod.network
+- **GitHub SDK**: https://github.com/podnetwork/pod-sdk
 
-💬 Community
+### 💬 **Community**
+- **Pod Network Discord**: Active developer community
+- **GitHub Issues**: Report bugs and request features
+- **Developer Feedback**: Share your deployment experience
 
-Pod Network Discord: Active developer community
-GitHub Issues: Report bugs and request features
-Developer Feedback: Share your deployment experience
+### 🔧 **Troubleshooting**
+- **[Common Issues Guide](feedback/troubleshooting-solutions.md)** - Solutions to real problems
+- **[Deployed Contracts](feedback/deployed-contracts.md)** - Live contract addresses and performance data
 
-🔧 Troubleshooting
+---
 
-Common Issues Guide - Solutions to real problems
+## ⚖️ License
 
+MIT License - See [LICENSE](LICENSE) for details.
 
-⚖️ License
-MIT License - See LICENSE for details.
+---
 
-Disclaimer: This is an independent developer resource created from real deployment experience. Pod Network is developed by Common Prefix. Always refer to official documentation for authoritative information.
+**Disclaimer**: This is an independent developer resource created from real deployment experience. Pod Network is developed by Common Prefix. Always refer to [official documentation](https://docs.v1.pod.network) for authoritative information.
 
-Built by karine001 - Making Pod Network accessible to developers
+---
+
+*Built by [karine001](https://github.com/karine001) - Making Pod Network accessible to developers*
