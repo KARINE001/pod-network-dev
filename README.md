@@ -98,7 +98,7 @@ pod-network-dev/
 
 ### ⚠️ **Challenges Solved**
 - **Import path fixes**: SDK examples need manual corrections
-- **Constructor parameters**: Undocumented but figured out through testing
+- **Constructor parameters**: Documented but figured out through testing
 - **Foundry configuration**: Custom setup required for Pod Network
 - **Environment setup**: Specific RPC URLs and chain configuration
 
